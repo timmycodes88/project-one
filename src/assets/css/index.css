@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* make a point about why we set this to 10px: */
+* { 
+  font-size: 10px;
+  font-family: 'Inter';
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inter'), url('../fonts/Inter.woff2') format('woff2'), url('../fonts/Inter2.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: thin;
+  font-weight: 100;
+  src: local('Inter'), url('../fonts/Inter100Latin.woff2') format('woff2'), url('../fonts/Inter100LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: extralight;
+  font-weight: 200;
+  src: local('Inter'), url('../fonts/Inter200Latin.woff2') format('woff2'), url('../fonts/Inter200LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: light;
+  font-weight: 300;
+  src: local('Inter'), url('../fonts/Inter300Latin.woff2') format('woff2'), url('../fonts/Inter300LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inter'), url('../fonts/Inter400Latin.woff2') format('woff2'), url('../fonts/Inter400LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: medium;
+  font-weight: 500;
+  src: local('Inter'), url('../fonts/Inter500Latin.woff2') format('woff2'), url('../fonts/Inter500LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: semibold;
+  font-weight: 600;
+  src: local('Inter'), url('../fonts/Inter600Latin.woff2') format('woff2'), url('../fonts/Inter600LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Inter'), url('../fonts/Inter700Latin.woff2') format('woff2'), url('../fonts/Inter700LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: extrabold;
+  font-weight: 800;
+  src: local('Inter'), url('../fonts/Inter800Latin.woff2') format('woff2'), url('../fonts/Inter800LatinExt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: black;
+  font-weight: 900;
+  src: local('Inter'), url('../fonts/Inter900Latin.woff2') format('woff2'), url('../fonts/Inter900LatinExt.woff2') format('woff2');
+}
