@@ -1,27 +1,27 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import tw from "twin.macro"
 import { Wrapper } from "../components/Wrapper.styled"
-import { Section } from '../components/Section.styled'
+import { Section } from "../components/Section.styled"
 
 export default function Home() {
+  const [apiText, setApiText] = useState("")
+  //! WIP
+  useEffect(() => {
+    let cancel = false
+
+    fetch("https://127.0.0.1:8080/").then(res => console.log(res))
+
+    return () => {
+      cancel = true
+    }
+  }, [])
+
   return (
-    <Section>   
+    <Section>
       <Wrapper>
         <Article>
           <h1>Hello World</h1>
-          <p>
-            Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel
-            sint commodi repudiandae consequuntur voluptatum laborum numquam
-            blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem.
-            Veritatis obcaecati tenetur iure eius earum ut molestias architecto
-            voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit
-            sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis
-            quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga?
-            Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi
-            expedita sint?
-          </p>
+          <p>{apiText}</p>
         </Article>
       </Wrapper>
     </Section>
