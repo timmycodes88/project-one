@@ -1,26 +1,17 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 import tw from "twin.macro"
 import Header from "./components/Header"
-import Home from "./pages/Home"
-import Shop from "./pages/Shop"
-import { GlobalStyles } from './utils/globalStyles'
+import { GlobalStyles } from "./utils/globalStyles"
 
 export default function App() {
-  return ( 
+  return (
     <>
-    <GlobalStyles />
-    <BrowserRouter>
-      
+      <GlobalStyles />
       <AppWrapper>
         <Header />
-        <Routes>
-          <Route path="/*" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
-        </Routes>
+        <Outlet />
       </AppWrapper>
-    </BrowserRouter>
     </>
-
   )
 }
 

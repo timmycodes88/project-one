@@ -2,7 +2,7 @@ import { useState } from "react"
 import tw from "twin.macro"
 import { Wrapper } from "../components/Wrapper.styled"
 import ItemCard from "../features/Shop/ItemCard"
-import { Section } from '../components/Section.styled'
+import { Section } from "../components/Section.styled"
 
 const names = [
   "Tim",
